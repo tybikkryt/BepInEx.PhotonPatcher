@@ -29,18 +29,18 @@ Only compatible with games that use the `ConnectUsingSettings` method
 
 *In these steps I assume using BepInEx 6 and IL2CPP. Dont forget to change BepInEx ver and Unity scripting backend type to yours*
 
-1. Uncomment the fields you need in `PhotonPatcherLib.cs` and `PhotonPatcher.BepInEx6.IL2CPP`
-2. Build 
+1. Git clone project `git clone https://github.com/tybikkryt/BepInEx.PhotonPatcher.git`
+2. Uncomment the fields you need in `PhotonPatcherLib.cs` and `PhotonPatcher.BepInEx6.IL2CPP`
+3. Build 2 DLLs
 ```
-git clone https://github.com/tybikkryt/BepInEx.PhotonPatcher.git
 cd BepInEx.PhotonPatcher/PhotonPatcherLib
 dotnet build -c release
 cd ../PhotonPatcher.BepInEx6.IL2CPP
 dotnet build -c release
 ```
-3. Copy `PhotonPatcherLib.dll` and `PhotonPatcher.BepInEx6.IL2CPP.dll` to `BepInEx/plugins`
-4. Run the game to create tybikkryt.photonpatcher.cfg
-5. Open BepInEx/config/tybikkryt.photonpatcher.cfg and set your values.
+4. Copy `PhotonPatcherLib.dll` and `PhotonPatcher.BepInEx6.IL2CPP.dll` to `BepInEx/plugins`
+5. Run the game to create tybikkryt.photonpatcher.cfg
+6. Open BepInEx/config/tybikkryt.photonpatcher.cfg and set your values.
 
 ## Issues
 If the plugin does not work try this:
